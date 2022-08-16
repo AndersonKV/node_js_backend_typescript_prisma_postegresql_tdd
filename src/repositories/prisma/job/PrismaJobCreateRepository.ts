@@ -32,6 +32,7 @@ class PrismaJobCreateRepository implements IJobCreateRepotiry {
                 title,
                 types_contract,
                 id_user,
+                avatar: "company_default.png",
                 expired_days: expired_days.toString(),
                 responsibilities,
                 requirements,
