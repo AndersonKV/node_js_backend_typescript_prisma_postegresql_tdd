@@ -1,0 +1,71 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id               Int      @id @default(autoincrement())
+  name             String
+  email            String   @unique
+  password         String
+  confirm_password String
+  created_at       DateTime @default(now())
+  updated_at       DateTime @default(now())
+  avatar           String   @default(dbgenerated("user_default.png"))
+  role             Role
+
+  matchings Matching[]
+  posts     Job[]
+
+  @@map("users")
+}
+
+enum Role {
+  USER
+  COMPANY
+}
+
+model Job {
+  id               Int      @id @default(autoincrement())
+  title            String
+  remote           String
+  name_company     String
+  id_user          Int // relation scalar field  (used in the `@relation` attribute above)
+  techs            String[]
+  types_contract   String
+  size_company     String
+  experience_level String
+  expired_days     String
+  created_at       DateTime @default(now())
+  updated_at       DateTime @default(now())
+  salary           String
+  responsibilities String
+  requirements     String
+  benefits         String
+  avatar           String   @default(dbgenerated("company_default.png"))
+
+  matchings Matching[]
+  User      User       @relation(fields: [id_user], references: [id], onDelete: Cascade, onUpdate: Cascade)
+
+  @@map("jobs")
+}
+
+model Matching {
+  id Int @id @default(autoincrement())
+
+  job_posted Job  @relation(fields: [id_job], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  matchings  User @relation(fields: [id_user], references: [id], onDelete: Cascade, onUpdate: Cascade)
+
+  id_user   Int // relation
+  id_job    Int
+  id_author Int
+
+  created_at DateTime @default(now())
+  updated_at DateTime @default(now())
+
+  @@map("matchings")
+}
