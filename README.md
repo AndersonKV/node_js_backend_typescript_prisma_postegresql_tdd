@@ -2,10 +2,15 @@
 
 
 
-Api Backend feito utilizando node js com typescript e prisma, com coberta de testes, autenticação, upload de fotos</br>
+Api Backend feito utilizando node js com typescript e prisma, com coberta de testes, tanto e2e, unit, integration, além de autenticação, upload de fotos</br>
 Para configurar basta colocar seus dados na pasta .env que e se quiser fazer os testes com as dependencias baixadas digite no terminal "yarn test:cov"
 
-Explore a api
+ 
+Um exemplo da cobertura de testes</br>
+<img src="test.png"/>
+ 
+ 
+ Explore a api
 
  ```diff
  
@@ -50,4 +55,4 @@ Explore a api
 ...
 
 
-<img src"test.png"/>
+ 
