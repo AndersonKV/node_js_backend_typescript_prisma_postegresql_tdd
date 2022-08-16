@@ -3,7 +3,8 @@
 
 
 Api Backend feito utilizando node js com typescript e prisma, com coberta de testes, tanto e2e, unit, integration, além de autenticação, upload de fotos</br>
-Para configurar basta colocar seus dados na pasta .env que e se quiser fazer os testes com as dependencias baixadas digite no terminal "yarn test:cov"
+Para configurar basta colocar seus dados na pasta .env</br>
+E se quiser fazer os testes com as dependencias baixadas digite no terminal "yarn test:cov"
 
  
 Um exemplo da cobertura de testes</br>
