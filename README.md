@@ -2,7 +2,7 @@
 
 
 
-Api Backend feito utilizando node js com typescript e prisma e postegresql, utilizando principios solid e com cobertura de testes, tanto e2e, unit, integration, além de autenticação, upload de fotos</br>
+Api Backend feito utilizando node js com typescript e prisma e postegresql, utilizando principios solid e com cobertura de testes, tanto e2e, unit, integration, além de autenticação, upload de fotos, banco com relacionamento de one to many e many to one</br>
 Para configurar basta colocar seus dados na pasta .env</br>
 E se quiser fazer os testes com as dependencias baixadas digite no terminal "yarn test:cov"
 
