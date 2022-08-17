@@ -2,7 +2,15 @@
 
 
 
-Api Backend feito utilizando node js com typescript e prisma e postegresql, utilizando principios solid e com cobertura de testes, tanto e2e, unit, integration, além de autenticação, upload de fotos, banco com relacionamento de one to many e many to one</br>
+Api Backend  utilizando node js com typescript e prisma e postegresql, utilizando principios solid e com cobertura de testes, tanto e2e, unit, integration, além de autenticação, upload de fotos, banco com relacionamento de one to many e many to one</br>
+
+Tem criação de usuarios, posts, matching da vaga, se a vaga ja está vencida ou se o usuário ja aplicou.
+
+Com api você pode criar um usuario ou compania e assim enviar um matching para uma vaga, estando como usuario ou enviando a vaga estando como compania, apenas usuario pode fazer o matching, a api possui validadores de campo, verificação, se quem está aplicando tem autorização ou autenticação, se ja aplicou antes</br>
+
+Ao fazer busca do usuario é possivel pegar todos os matchings que ele fez ou compania todas as vagas que postou e todos que aplicaram a ela</br>
+
+
 Para configurar basta colocar seus dados na pasta .env</br>
 
 E se quiser fazer os testes com as dependencias baixadas digite no terminal "yarn test:cov"
