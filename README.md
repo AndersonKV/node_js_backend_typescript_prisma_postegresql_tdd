@@ -11,7 +11,7 @@ Com api você pode criar um usuario ou compania e assim enviar um matching para 
 Ao fazer busca do usuario é possivel pegar todos os matchings que ele fez ou compania todas as vagas que postou e todos que aplicaram a ela</br>
 
 
-Para configurar basta colocar seus dados na pasta .env</br>
+***Para configurar basta colocar seus dados na pasta .env</br>***
 
 E se quiser fazer os testes com as dependencias baixadas digite no terminal "yarn test:cov"
 
