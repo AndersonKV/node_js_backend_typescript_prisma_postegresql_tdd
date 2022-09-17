@@ -2,7 +2,7 @@
 
 
 
-Api Backend  utilizando node js com typescript e prisma e postegresql, utilizando principios solid e com cobertura de testes, tanto e2e, unit, integration, além de autenticação, upload de fotos, banco com relacionamento de one to many e many to one</br>
+Api Backend  utilizando node com typescript e prisma e postegresql, utilizando principios solid e com cobertura de testes, tanto e2e, unit, integration, além de autenticação, upload de fotos, banco com relacionamento de one to many e many to one</br>
 
 Tem criação de usuarios, posts, matching da vaga, se a vaga ja está vencida ou se o usuário ja aplicou.
 
